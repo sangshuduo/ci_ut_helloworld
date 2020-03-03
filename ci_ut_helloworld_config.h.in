@@ -1,0 +1,2 @@
+#define ci_ut_helloworld_config_VERSION_MAJOR @ci_ut_helloworld_VERSION_MAJOR@ 
+#define ci_ut_helloworld_config_VERSION_MINOR @ci_ut_helloworld_VERSION_MINOR@ 

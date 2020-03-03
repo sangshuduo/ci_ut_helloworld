@@ -24,6 +24,12 @@
 #
 # Configuration
 #
+language: c
+
+os:
+  - linux
+  - osx
+
 compiler:
   - clang
   - gcc
@@ -31,14 +37,23 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - |
-    if ! brew ls --version cmake &> /dev/null; then brew update; brew install cmake; fi
+
+script:
+  - cmake ..
+  - cmake --build .
 
 #
 # Build Matrix
 #
 matrix:
+  - os: linux
+    addons:
+      apt:
+        packages:
+          - build-essential
+          - cmake
+
   - os: osx
-    script:
-      - cmake ..
-      - cmake --build .
+    addons:
+      homebrew:
+        - cmake

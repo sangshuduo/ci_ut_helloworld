@@ -5,6 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/sangshuduo/ci_ut_helloworld/badge.svg?branch=master)](https://coveralls.io/github/sangshuduo/ci_ut_helloworld?branch=master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/20534/badge.svg)](https://scan.coverity.com/projects/sangshuduo-ci_ut_helloworld)
 ![C/C++ CI](https://github.com/sangshuduo/ci_ut_helloworld/workflows/C/C++%20CI/badge.svg?branch=master)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/sangshuduo/ci_ut_helloworld.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sangshuduo/ci_ut_helloworld/alerts/)
+[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/sangshuduo/ci_ut_helloworld.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sangshuduo/ci_ut_helloworld/context:cpp)
 
 ## Description
 

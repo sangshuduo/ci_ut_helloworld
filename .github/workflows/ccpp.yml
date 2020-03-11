@@ -13,11 +13,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: make-build-dir
-      run: mkdir build
-    - name: cd-build-dir
-      run: cd build
-    - name: cmake-generate-makefile
-      run: cmake ..
-    - name: cmake-build
+    - name: configure
+      run: mkdir build && cd build && cmake ..
+    - name: build
       run: cmake --buld ..

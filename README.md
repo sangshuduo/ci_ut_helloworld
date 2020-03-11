@@ -4,6 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/8n4r44j9d4psvnjc/branch/master?svg=true)](https://ci.appveyor.com/project/sangshuduo/ci-ut-helloworld/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/sangshuduo/ci_ut_helloworld/badge.svg?branch=master)](https://coveralls.io/github/sangshuduo/ci_ut_helloworld?branch=master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/20534/badge.svg)](https://scan.coverity.com/projects/sangshuduo-ci_ut_helloworld)
+![C/C++ CI](https://github.com/sangshuduo/ci_ut_helloworld/workflows/C/C++%20CI/badge.svg?branch=master)
 
 ## Description
 

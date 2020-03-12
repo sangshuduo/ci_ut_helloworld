@@ -7,6 +7,9 @@
 ![C/C++ CI](https://github.com/sangshuduo/ci_ut_helloworld/workflows/C/C++%20CI/badge.svg?branch=master)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sangshuduo/ci_ut_helloworld.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sangshuduo/ci_ut_helloworld/alerts/)
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/sangshuduo/ci_ut_helloworld.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sangshuduo/ci_ut_helloworld/context:cpp)
+[![CircleCI](https://circleci.com/gh/sangshuduo/ci_ut_helloworld.svg?style=svg)](https://circleci.com/gh/sangshuduo/ci_ut_helloworld)
+[![CircleCI](https://circleci.com/gh/sangshuduo/ci_ut_helloworld.svg?style=shield)](https://circleci.com/gh/sangshuduo/ci_ut_helloworld)
+
 
 ## Description
 

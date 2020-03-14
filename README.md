@@ -14,6 +14,7 @@
 [![GuardRails badge](https://badges.guardrails.io/sangshuduo/ci_ut_helloworld.svg)](https://dashboard.guardrails.io/default/gh/sangshuduo/ci_ut_helloworld)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1c7270369ea7bcddce6d/maintainability)](https://codeclimate.com/github/sangshuduo/ci_ut_helloworld/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1c7270369ea7bcddce6d/test_coverage)](https://codeclimate.com/github/sangshuduo/ci_ut_helloworld/test_coverage)
+[![wercker status](https://app.wercker.com/status/c1132aaca35049e2b15222037cc33366/s/master "wercker status")](https://app.wercker.com/project/byKey/c1132aaca35049e2b15222037cc33366)
 
 ## Description
 

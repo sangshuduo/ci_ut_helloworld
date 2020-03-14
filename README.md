@@ -10,6 +10,7 @@
 [![CircleCI](https://circleci.com/gh/sangshuduo/ci_ut_helloworld.svg?style=svg)](https://circleci.com/gh/sangshuduo/ci_ut_helloworld)
 [![CircleCI](https://circleci.com/gh/sangshuduo/ci_ut_helloworld.svg?style=shield)](https://circleci.com/gh/sangshuduo/ci_ut_helloworld)
 ![GitHub Actions - reviewdog](https://github.com/sangshuduo/ci_ut_helloworld/workflows/GitHub%20Actions%20-%20reviewdog/badge.svg)
+[![buddy pipeline](https://app.buddy.works/sangshuduo/ci-ut-helloworld/pipelines/pipeline/244906/badge.svg?token=4cc92cdfae725e1a95fd30debb89256556bb7c53c85c26cb49a436fa9d4bb0c5 "buddy pipeline")](https://app.buddy.works/sangshuduo/ci-ut-helloworld/pipelines/pipeline/244906)
 
 ## Description
 

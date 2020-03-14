@@ -1,0 +1,12 @@
+bundles: "auto"
+report:
+  pullRequest:
+    findings: "onChangedLinesOnly"
+    comment: true
+
+notifications:
+  slack:
+    notify: whenScanHasFindingsOnly
+    enabled: true
+    webhookUrl: >-
+      https://hooks.slack.com/services/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

@@ -20,6 +20,8 @@ build:
     # Read more about steps on our dev center:
     # https://devcenter.wercker.com/development/steps/
   steps:
+    - install-packages:
+      packages: build-essential cmake git
     - script:
         name: build
         code: |

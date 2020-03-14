@@ -12,6 +12,8 @@
 ![GitHub Actions - reviewdog](https://github.com/sangshuduo/ci_ut_helloworld/workflows/GitHub%20Actions%20-%20reviewdog/badge.svg)
 [![buddy pipeline](https://app.buddy.works/sangshuduo/ci-ut-helloworld/pipelines/pipeline/244906/badge.svg?token=4cc92cdfae725e1a95fd30debb89256556bb7c53c85c26cb49a436fa9d4bb0c5 "buddy pipeline")](https://app.buddy.works/sangshuduo/ci-ut-helloworld/pipelines/pipeline/244906)
 [![GuardRails badge](https://badges.guardrails.io/sangshuduo/ci_ut_helloworld.svg)](https://dashboard.guardrails.io/default/gh/sangshuduo/ci_ut_helloworld)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1c7270369ea7bcddce6d/maintainability)](https://codeclimate.com/github/sangshuduo/ci_ut_helloworld/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1c7270369ea7bcddce6d/test_coverage)](https://codeclimate.com/github/sangshuduo/ci_ut_helloworld/test_coverage)
 
 ## Description
 

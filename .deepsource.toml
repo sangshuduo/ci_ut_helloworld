@@ -6,7 +6,10 @@ test_patterns = [
     "*.sh"
 ]
 
-exclude_patterns = ["*.txt"]
+exclude_patterns = [
+    "*.txt",
+    "*.yml"
+]
 
 [[analyzers]]
 name = "test-coverage"

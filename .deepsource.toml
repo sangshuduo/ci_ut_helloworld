@@ -1,0 +1,13 @@
+version = 1
+
+test_patterns = [
+    "*.c",
+    "*.h",
+    "*.sh"
+]
+
+exclude_patterns = ["*.txt"]
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true

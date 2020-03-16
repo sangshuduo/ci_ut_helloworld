@@ -16,6 +16,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1c7270369ea7bcddce6d/test_coverage)](https://codeclimate.com/github/sangshuduo/ci_ut_helloworld/test_coverage)
 [![wercker status](https://app.wercker.com/status/c1132aaca35049e2b15222037cc33366/s/master "wercker status")](https://app.wercker.com/project/byKey/c1132aaca35049e2b15222037cc33366)
 [![Codeship Status for sangshuduo/ci_ut_helloworld](https://app.codeship.com/projects/990c7260-48e5-0138-ccb8-5aa01f7f5d98/status?branch=master)](https://app.codeship.com/projects/388887)
+[![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/sangshuduo/ci_ut_helloworld/?ref=repository-badge)
 
 ## Description
 

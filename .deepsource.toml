@@ -1,0 +1,13 @@
+version = 1
+
+test_patterns = [
+    "*.c",
+    "*.h",
+    "*.sh"
+]
+
+exclude_patterns = ["*.yml"]
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true

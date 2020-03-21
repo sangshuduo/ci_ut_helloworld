@@ -18,6 +18,8 @@
 [![Codeship Status for sangshuduo/ci_ut_helloworld](https://app.codeship.com/projects/990c7260-48e5-0138-ccb8-5aa01f7f5d98/status?branch=master)](https://app.codeship.com/projects/388887)
 [![Build Status](https://dev.azure.com/sangshuduo/ci_ut_helloworld/_apis/build/status/ci_ut_helloworld?branchName=master)](https://dev.azure.com/sangshuduo/ci_ut_helloworld/_build/latest?definitionId=1&branchName=master)
 [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/sangshuduo/ci_ut_helloworld/?ref=repository-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sangshuduo/ci_ut_helloworld?style=social)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/sangshuduo/ci_ut_helloworld)
 
 ## Description
 

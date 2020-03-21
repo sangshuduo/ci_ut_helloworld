@@ -21,6 +21,7 @@
 ![GitHub](https://img.shields.io/github/license/sangshuduo/ci_ut_helloworld)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sangshuduo/ci_ut_helloworld?style=social)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/sangshuduo/ci_ut_helloworld)
+![Twitter Follow](https://img.shields.io/twitter/follow/sangshuduo?style=social)
 
 ## Description
 

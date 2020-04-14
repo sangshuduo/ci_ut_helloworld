@@ -1,3 +1,11 @@
 plugins:
   cppcheck:
     enabled: true
+    config:
+      check: all
+      language: c++
+      stds:
+        - c++11
+        - c++14
+        - c++17
+

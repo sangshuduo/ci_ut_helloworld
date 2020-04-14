@@ -92,6 +92,12 @@ matrix:
           - build-essential
           - cmake
           - lcov
+    before_install:
+      - cd ${TRAVIS_BUILD_DIR}
+      - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - chmod +x ./cc-test-reporter
+      - ./cc-test-reporter before-build
+
     after_success:
       - |-
         case $TRAVIS_OS_NAME in
@@ -109,18 +115,36 @@ matrix:
             cmake -DCOVER=true ..
             make
             ./ci_ut_helloworld
-            cd ..
+            cd ${TRAVIS_BUILD_DIR}
             lcov -d . --capture -o coverage.info
             lcov -l coverage.info || exit $?
 
             gem install coveralls-lcov
 
-            coveralls-lcov coverage.info \
-              && echo -e "${GREEN} ## Uploaded to Coveralls.io! ## ${NC}" \
-              || echo -e "${RED} ## Coveralls.io not collect coverage report! ## ${NC} "
-            bash <(curl -s https://codecov.io/bash) -f coverage.info \
-              && echo -e "${GREEN} ## Uploaded to Codecov! ## ${NC} " \
-              || echo -e "${RED} ## Codecov did not collect coverage report! ## ${NC} "
+            coveralls-lcov coverage.info
+            if [ "$?" -eq "0" ]; then
+              echo -e "${GREEN} ## Uploaded to Coveralls.io! ## ${NC}"
+            else
+              echo -e "${RED} ## Coveralls.io not collect coverage report! ## ${NC} "
+              exit $?
+            fi
+
+            bash <(curl -s https://codecov.io/bash) -f coverage.info
+            if [ "$?" -eq "0" ]; then
+              echo -e "${GREEN} ## Uploaded to Codecov! ## ${NC} "
+            else
+              echo -e "${RED} ## Codecov did not collect coverage report! ## ${NC} "
+              exit $?
+            fi
+
+            ./cc-test-reporter format-coverage coverage.info -t lcov --debug
+            ./cc-test-reporter upload-coverage
+            if [ "$?" -eq "0" ]; then
+              echo -e "${GREEN} ## Uploaded to CodeClimate! ## ${NC} "
+            else
+              echo -e "${RED} ## CodeClimate did not collect coverage report! ## ${NC} "
+              exit $?
+            fi
           ;;
         esac
 

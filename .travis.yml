@@ -55,6 +55,16 @@ before_install:
         ;;
     esac
 
+install:
+  - |-
+    case $TRAVIS_OS_NAME in
+      linux)
+        sudo apt -y update
+        sudo apt -y install lcov gcovr
+        gem install coveralls-lcov
+        ;;
+    esac
+
 before_cache:
   - |-
     case $TRAVIS_OS_NAME in
@@ -66,19 +76,40 @@ before_cache:
 
 cache:
   directories:
-    - $HOME/AppData/Local/Temp/chocolatey
-    - /C/tools/msys64
+    - |-
+      case $TRAVIS_OS_NAME in
+        windows)
+        - $HOME/AppData/Local/Temp/chocolatey
+        - /C/tools/msys64
+          ;;
+      esac
 
 before_script:
-  - mkdir build
-  - cd build
+  - cd ${TRAVIS_BUILD_DIR}
+  - mkdir debug
+  - cd debug
 
 script:
   - cmake ..
   - cmake --build .
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - |-
+    case $TRAVIS_OS_NAME in
+      linux)
+      cd ${TRAVIS_BUILD_DIR}
+      cd debug
+      rm -rf *
+      cmake -DCOVER=true ..
+      make
+      ./ci_ut_helloworld
+      lcov -d . --capture -o coverage.info
+      lcov -l coverage.info
+      coveralls-lcov coverage.info
+      ;;
+    esac
+
+#- bash <(curl -s https://codecov.io/bash)
 #
 # Build Matrix
 #
@@ -89,6 +120,7 @@ matrix:
         packages:
           - build-essential
           - cmake
+          - lcov
 
   - os: osx
     addons:

@@ -55,6 +55,14 @@ before_install:
         ;;
     esac
 
+install:
+  - |-
+    case $TRAVIS_OS_NAME in
+      linux)
+        gem install coveralls-lcov
+        ;;
+    esac
+
 before_cache:
   - |-
     case $TRAVIS_OS_NAME in
@@ -78,6 +86,14 @@ script:
   - cmake --build .
 
 after_success:
+  rm -rf *
+  cmake -DCOVER=true ..
+  make
+  ./ci_ut_helloworld
+  lcov  -d . --capture -o coverage.info
+  lcov -l coverage.info
+  coveralls-lcov coverage.info
+
   - bash <(curl -s https://codecov.io/bash)
 #
 # Build Matrix
@@ -89,6 +105,7 @@ matrix:
         packages:
           - build-essential
           - cmake
+          - lcov
 
   - os: osx
     addons:

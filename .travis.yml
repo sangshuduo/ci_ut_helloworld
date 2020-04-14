@@ -97,6 +97,12 @@ after_success:
   - |-
     case $TRAVIS_OS_NAME in
       linux)
+      RED='\033[0;31m'
+      GREEN='\033[1;32m'
+      GREEN_DARK='\033[0;32m'
+      GREEN_UNDERLINE='\033[4;32m'
+      NC='\033[0m'
+
       cd ${TRAVIS_BUILD_DIR}
       cd debug
       rm -rf *
@@ -105,11 +111,11 @@ after_success:
       ./ci_ut_helloworld
       lcov -d . --capture -o coverage.info
       lcov -l coverage.info
-      coveralls-lcov coverage.info
+      coveralls-lcov coverage.info && echo -e "${GREEN} ## Uploaded to Coveralls.io! ## ${NC}"|| echo -e "${RED} ## Coveralls.io not collect coverage report! ## ${NC} "
+      bash <(curl -s https://codecov.io/bash) -f coverage.info && echo -e "${GREEN} ## Uploaded to Codecov! ## ${NC} "|| echo -e "${RED} ## Codecov did not collect coverage report! ## ${NC} "
       ;;
     esac
 
-#- bash <(curl -s https://codecov.io/bash)
 #
 # Build Matrix
 #

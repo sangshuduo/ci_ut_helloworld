@@ -1,3 +1,4 @@
+version: "2"         # required to adjust maintainability checks
 plugins:
   cppcheck:
     enabled: true
@@ -9,7 +10,6 @@ plugins:
         - c++14
         - c++17
 
-version: "2"         # required to adjust maintainability checks
 checks:
   argument-count:
     config:

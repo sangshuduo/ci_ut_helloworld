@@ -77,6 +77,8 @@ script:
   - cmake ..
   - cmake --build .
 
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 #
 # Build Matrix
 #

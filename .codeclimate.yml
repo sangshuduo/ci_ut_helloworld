@@ -31,3 +31,7 @@ checks:
   identical-code:
     config:
       threshold: 1 # language-specific defaults. an override will affect all languages.
+
+ratings:
+  paths:
+    - *.c

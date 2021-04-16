@@ -44,7 +44,7 @@ platform:
 
 steps:
 - name: test
-  image: arm32v7/ubuntu
+  image: arm32v7/ubuntu:18.04
   commands:
   - export TZ=Asia/Harbin
   - apt-get update -qq

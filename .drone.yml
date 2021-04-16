@@ -1,0 +1,55 @@
+kind: pipeline
+name: test-on-amd64
+
+platform:
+  arch: amd64
+
+steps:
+- name: test
+  image: ubuntu:20.04
+  commands:
+  - export TZ=Asia/Harbin
+  - apt-get update -qq
+  - apt-get install -y cmake make gcc g++
+  - mkdir debug
+  - cd debug
+  - cmake ..
+  - make
+
+---
+kind: pipeline
+name: test-on-arm64
+
+platform:
+  arch: arm64
+
+steps:
+- name: test
+  image: ubuntu:20.04
+  commands:
+  - export TZ=Asia/Harbin
+  - apt-get update -qq
+  - apt-get install -y cmake make gcc g++
+  - mkdir debug
+  - cd debug
+  - cmake ..
+  - make
+
+---
+kind: pipeline
+name: test-on-arm32
+
+platform:
+  arch: arm
+
+steps:
+- name: test
+  image: arm32v7/ubuntu:18.04
+  commands:
+  - export TZ=Asia/Harbin
+  - apt-get update -qq
+  - apt-get install -y cmake make gcc g++
+  - mkdir debug
+  - cd debug
+  - cmake ..
+  - make

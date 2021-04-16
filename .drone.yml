@@ -44,7 +44,7 @@ platform:
 
 steps:
 - name: test
-  image: ubuntu:20.04
+  image: ubuntu
   commands:
   - export TZ=Asia/Harbin
   - apt-get update -qq

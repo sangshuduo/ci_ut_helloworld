@@ -10,7 +10,7 @@ steps:
   commands:
   - export TZ=Asia/Harbin
   - apt-get update -qq
-  - apt-get install -y cmake make gcc
+  - apt-get install -y cmake make gcc g++
   - mkdir debug
   - cd debug
   - cmake ..
@@ -29,7 +29,7 @@ steps:
   commands:
   - export TZ=Asia/Harbin
   - apt-get update -qq
-  - apt-get install -y cmake make gcc
+  - apt-get install -y cmake make gcc g++
   - mkdir debug
   - cd debug
   - cmake ..
@@ -48,7 +48,7 @@ steps:
   commands:
   - export TZ=Asia/Harbin
   - apt-get update -qq
-  - apt-get install -y cmake make gcc
+  - apt-get install -y cmake make gcc g++
   - mkdir debug
   - cd debug
   - cmake ..

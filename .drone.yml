@@ -6,7 +6,7 @@ platform:
 
 steps:
 - name: test
-  image: gcc
+  image: ubuntu:20.04
   commands:
   - mkdir debug
   - cd debug
@@ -22,7 +22,7 @@ platform:
 
 steps:
 - name: test
-  image: gcc
+  image: ubuntu:20.04
   commands:
   - mkdir debug
   - cd debug
@@ -38,7 +38,7 @@ platform:
 
 steps:
 - name: test
-  image: gcc
+  image: ubuntu:20.04
   commands:
   - mkdir debug
   - cd debug

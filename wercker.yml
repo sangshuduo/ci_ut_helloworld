@@ -21,7 +21,7 @@ build:
     # https://devcenter.wercker.com/development/steps/
   steps:
     - install-packages:
-      packages: build-essential cmake git
+      packages: cmake gcc g++
     - script:
         name: build
         code: |

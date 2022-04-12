@@ -23,7 +23,11 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sangshuduo/ci_ut_helloworld?style=social)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/sangshuduo/ci_ut_helloworld)
 ![Twitter Follow](https://img.shields.io/twitter/follow/sangshuduo?style=social)
+[![Mergify Status][mergify-status]][mergify]
 
 ## Description
 
 This is an example how a simple C project use cmake, popular CI and unit test framework.
+
+[mergify]: https://mergify.com
+[mergify-status]: https://img.shields.io/endpoint.svg?url=https://api.mergify.com/v1/badges/sangshuduo/ci_ut_helloworld&style=flat
